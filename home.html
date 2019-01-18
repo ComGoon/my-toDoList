@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Web dev & design</title>
+    <!-- page title -->
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <!-- linking the css file -->
+  </head>
+  <body>
+    <!-- header -->
+    <div id="page-banner">
+      <h1>Web dev & design</h1>
+      <p>
+        This is my todo list, you can add items, delete, search item, even hide
+        the items if you wish.<br />
+        At the bottom, is found a counting machine, make sure you play with!
+      </p>
+    </div>
+
+    <!-- the search form -->
+    <form action="#" method="POST" id="search-item" class="form">
+      <label>Search: </label>
+      <input style="width: 30%;" class="mousedown" type="text" placeholder=" Search your item" />
+      <!-- <button class="mousedown" type="submit" id="search-btn">Search</button> -->
+    </form>
+
+    <!-- Default list is found here, can be modified in the app interface -->
+    <ul id="uli">
+      <li class="list">1 <span class="dlt">delete</span></li>
+      <li class="list">Two <span class="dlt">delete</span></li>
+      <li class="list">3 <span class="dlt">delete</span></li>
+      <li class="list">Four <span class="dlt">delete</span></li>
+      <li class="list">5 <span class="dlt">delete</span></li>
+      <li class="list">Six <span class="dlt">delete</span></li>
+    </ul>
+
+    <!-- the add item form & the hide items option checkbox -->
+    <form action="" method="POST" id="add-item" class="form">
+      <input type="checkbox" id="hide" />
+      <label for="hide">Hide All items</label><br />
+      <input class="mousedown" type="text" placeholder="Item to add" />
+      <button class="mousedown" id="add-btn" type="submit">Add</button>
+    </form>
+
+    <hr />
+
+    <!-- counter -->
+    <form action="">
+      <label for="counter">Counting machine:</label>
+      <div id="counter">
+        <button class="btn" id="up">up</button>
+        <div id="count">0</div>
+        <button class="btn" id="down">down</button>
+      </div>
+    </form>
+
+    <footer style="margin: auto; background: black; color: blanchedalmond; height: 5%;">
+      <p id="para">Made with ️️️❤️
+        <a href="http://www.about.me/comgoon" target="link">about!</a>
+      </p>
+    
+    </footer>
+
+    <!-- attaching the javascript app -->
+    <script src="app.js"></script>
+  </body>
+</html>
